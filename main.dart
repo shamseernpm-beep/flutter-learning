@@ -35,22 +35,22 @@ class Dog extends Animal {
     }
 }
 
-// class Cat extends Animal {
+class Cat extends Animal {
 
-//     // @override
-//     void sound(){
-//         print("cat sound");
-//     }
-// }
+    // @override
+    void sound(){
+        print("cat sound");
+    }
+}
 
 void main(){
    greet();
 
 
     Dog dog=Dog();
-    // Cat cat=Cat();
+    Cat cat=Cat();
 
     dog.sound();
-    // cat.sound();
+    cat.sound();
  }
 
