@@ -24,6 +24,10 @@ class _HomepageState extends State<Homepage> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [Icon(Icons.star), Icon(Icons.edit), Icon(Icons.menu)],
+            ),
             SizedBox(
               width: 300,
               child: TextField(
