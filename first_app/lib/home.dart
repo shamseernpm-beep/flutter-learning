@@ -13,7 +13,7 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [Icon(Icons.search)],
+        actions: [Icon(Icons.star), Icon(Icons.search)],
         leading: Icon(Icons.home),
         title: Text("RISWAN APP"),
         centerTitle: true,
