@@ -13,8 +13,8 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [Icon(Icons.home)],
-        leading: Icon(Icons.search),
+        actions: [Icon(Icons.search)],
+        leading: Icon(Icons.home),
         title: Text("RISWAN APP"),
         centerTitle: true,
 
@@ -30,6 +30,14 @@ class _HomepageState extends State<Homepage> {
                 decoration: InputDecoration(hintText: "Enter your name"),
               ),
             ),
+            SizedBox(height: 10),
+            SizedBox(
+              width: 300,
+              child: TextField(
+                decoration: InputDecoration(hintText: "Enter your age"),
+              ),
+            ),
+
             SizedBox(height: 50),
             ElevatedButton(
               style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
@@ -38,6 +46,7 @@ class _HomepageState extends State<Homepage> {
               },
               child: Text("Click Here"),
             ),
+            SizedBox(height: 50),
             Text(
               "THIS IS MY NEW APP",
               style: TextStyle(fontSize: 25, color: Colors.blue),
