@@ -20,10 +20,22 @@ class _HomepageState extends State<Homepage> {
 
         backgroundColor: Colors.blue,
       ),
-      body: const Center(
-        child: Text(
-          "THIS IS MY NEW APP",
-          style: TextStyle(fontSize: 25, color: Colors.blue),
+      body: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            SizedBox(
+              width: 300,
+              child: TextField(
+                decoration: InputDecoration(hintText: "Enter your name"),
+              ),
+            ),
+            SizedBox(height: 50),
+            Text(
+              "THIS IS MY NEW APP",
+              style: TextStyle(fontSize: 25, color: Colors.blue),
+            ),
+          ],
         ),
       ),
     );
