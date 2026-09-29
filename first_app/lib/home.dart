@@ -31,6 +31,13 @@ class _HomepageState extends State<Homepage> {
               ),
             ),
             SizedBox(height: 50),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+              onPressed: () {
+                print("Button is clicked");
+              },
+              child: Text("Click Here"),
+            ),
             Text(
               "THIS IS MY NEW APP",
               style: TextStyle(fontSize: 25, color: Colors.blue),
