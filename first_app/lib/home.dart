@@ -75,22 +75,21 @@ class _HomepageState extends State<Homepage> {
               style: TextStyle(fontSize: 25, color: Colors.blue),
             ),
             SizedBox(height: 10),
-            SizedBox(
-              width: 100,
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => ProfileScreen()),
-                  );
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.red,
-                  foregroundColor: Colors.white,
-                ),
-                child: Text("Go to profile"),
+
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ProfileScreen()),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red,
+                foregroundColor: Colors.white,
               ),
+              child: Text("Go to profile"),
             ),
+
             SizedBox(height: 30),
             TextButton(
               onPressed: () {
