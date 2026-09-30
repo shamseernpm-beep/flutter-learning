@@ -59,17 +59,7 @@ class _HomepageState extends State<Homepage> {
             ),
 
             SizedBox(height: 50),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.red,
-                foregroundColor: Colors.white,
-              ),
-              onPressed: () {
-                print("Button is clicked");
-              },
-              child: Text("Click Here"),
-            ),
-            SizedBox(height: 50),
+
             Text(
               "THIS IS MY NEW APP",
               style: TextStyle(fontSize: 25, color: Colors.blue),
@@ -88,14 +78,6 @@ class _HomepageState extends State<Homepage> {
                 foregroundColor: Colors.white,
               ),
               child: Text("Go to profile"),
-            ),
-
-            SizedBox(height: 30),
-            TextButton(
-              onPressed: () {
-                print("Forget password clicked");
-              },
-              child: Text("FORGET PASSWORD?"),
             ),
           ],
         ),

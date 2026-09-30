@@ -78,6 +78,15 @@ class ProfileScreen extends StatelessWidget {
                   ),
                 ),
               ),
+              Align(
+                alignment: Alignment.centerRight,
+                child: TextButton(
+                  onPressed: () {
+                    print("forget button is clicked");
+                  },
+                  child: Text("FORGET PASSWORD"),
+                ),
+              ),
               SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
@@ -90,7 +99,7 @@ class ProfileScreen extends StatelessWidget {
                   backgroundColor: Colors.red,
                   foregroundColor: Colors.white,
                 ),
-                child: Text("Go to profile"),
+                child: Text("Go to main page"),
               ),
             ],
           ),
