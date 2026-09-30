@@ -76,8 +76,7 @@ class _HomepageState extends State<Homepage> {
             ),
             SizedBox(height: 10),
             SizedBox(
-              width: double.infinity,
-
+              width: 100,
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -91,6 +90,13 @@ class _HomepageState extends State<Homepage> {
                 ),
                 child: Text("Go to profile"),
               ),
+            ),
+            SizedBox(height: 30),
+            TextButton(
+              onPressed: () {
+                print("Forget password clicked");
+              },
+              child: Text("FORGET PASSWORD?"),
             ),
           ],
         ),
