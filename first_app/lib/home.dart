@@ -1,4 +1,3 @@
-// import 'package:flutter/cupertino.dart';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -66,7 +65,7 @@ class _HomepageState extends State<Homepage> {
               "THIS IS MY NEW APP",
               style: TextStyle(fontSize: 25, color: Colors.blue),
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 10),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
