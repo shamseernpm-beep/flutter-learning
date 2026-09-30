@@ -38,14 +38,23 @@ class _HomepageState extends State<Homepage> {
             SizedBox(
               width: 300,
               child: TextField(
-                decoration: InputDecoration(hintText: "Enter your name"),
+                decoration: InputDecoration(
+                  hintText: "Enter your full name",
+                  prefixIcon: Icon(Icons.person),
+                  labelText: "name",
+                  border: OutlineInputBorder(),
+                ),
               ),
             ),
             SizedBox(height: 10),
             SizedBox(
               width: 300,
               child: TextField(
-                decoration: InputDecoration(hintText: "Enter your age"),
+                decoration: InputDecoration(
+                  hintText: "Enter your age",
+                  prefixIcon: Icon(Icons.numbers),
+                  border: OutlineInputBorder(),
+                ),
               ),
             ),
 
@@ -66,18 +75,21 @@ class _HomepageState extends State<Homepage> {
               style: TextStyle(fontSize: 25, color: Colors.blue),
             ),
             SizedBox(height: 10),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => ProfileScreen()),
-                );
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.red,
-                foregroundColor: Colors.white,
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ProfileScreen()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.red,
+                  foregroundColor: Colors.white,
+                ),
+                child: Text("Go to profile"),
               ),
-              child: Text("Go to profile"),
             ),
           ],
         ),
