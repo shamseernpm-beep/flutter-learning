@@ -1,8 +1,11 @@
-import 'package:flutter/cupertino.dart';
+// import 'package:flutter/cupertino.dart';
+import 'dart:math';
+
 import 'package:flutter/material.dart';
+import 'package:first_app/profile.dart';
 
 class Homepage extends StatefulWidget {
-  const new({super.key});
+  const Homepage({super.key});
 
   @override
   State<Homepage> createState() => _HomepageState();
@@ -14,7 +17,12 @@ class _HomepageState extends State<Homepage> {
     return Scaffold(
       appBar: AppBar(
         actions: [Icon(Icons.star), Icon(Icons.search)],
-        leading: Icon(Icons.home),
+        leading: IconButton(
+          onPressed: () {
+            print("Home page is clicked");
+          },
+          icon: Icon(Icons.home),
+        ),
         title: Text("RISWAN APP"),
         centerTitle: true,
 
@@ -44,7 +52,10 @@ class _HomepageState extends State<Homepage> {
 
             SizedBox(height: 50),
             ElevatedButton(
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red,
+                foregroundColor: Colors.white,
+              ),
               onPressed: () {
                 print("Button is clicked");
               },
@@ -54,6 +65,20 @@ class _HomepageState extends State<Homepage> {
             Text(
               "THIS IS MY NEW APP",
               style: TextStyle(fontSize: 25, color: Colors.blue),
+            ),
+            SizedBox(height: 30),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ProfileScreen()),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red,
+                foregroundColor: Colors.white,
+              ),
+              child: Text("Go to profile"),
             ),
           ],
         ),
