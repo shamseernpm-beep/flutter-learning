@@ -77,6 +77,7 @@ class _HomepageState extends State<Homepage> {
             SizedBox(height: 10),
             SizedBox(
               width: double.infinity,
+
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
