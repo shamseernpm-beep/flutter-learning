@@ -3,12 +3,16 @@ import 'package:flutter/material.dart';
 class Lastscreen extends StatefulWidget {
   const Lastscreen({super.key});
 
-  State<Lastscreen> createState() => _Last
+  @override
+  State<Lastscreen> createState() => _LastscreenState();
 }
 
-class Homepage extends StatefulWidget {
-  const Homepage({super.key});
-
+class _LastscreenState extends State<Lastscreen> {
   @override
-  State<Homepage> createState() => _HomepageState();
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("Last Screen")),
+      body: Center(child: Text("This is Last Screen")),
+    );
+  }
 }

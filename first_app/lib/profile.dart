@@ -46,19 +46,42 @@ class ProfileScreen extends StatelessWidget {
               SizedBox(
                 width: 300,
                 child: TextField(
-                  decoration: InputDecoration(hintText: "Enter youre name"),
+                  decoration: InputDecoration(
+                    hintText: "Enter youre name",
+                    labelText: "name",
+                    border: OutlineInputBorder(),
+                    prefixIcon: Icon(Icons.person),
+                  ),
                 ),
               ),
+              SizedBox(height: 20),
               SizedBox(
                 width: 300,
                 child: TextField(
-                  decoration: InputDecoration(hintText: "enter your password"),
+                  decoration: InputDecoration(
+                    hintText: "Enter your email",
+                    prefixIcon: Icon(Icons.email),
+                    labelText: "email",
+                    border: OutlineInputBorder(),
+                  ),
                 ),
               ),
-
+              SizedBox(height: 20),
+              SizedBox(
+                width: 300,
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: "enter your password",
+                    prefixIcon: Icon(Icons.key),
+                    border: OutlineInputBorder(),
+                    labelText: "password",
+                  ),
+                ),
+              ),
+              SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.pop(
+                  Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Lastscreen()),
                   );
@@ -67,7 +90,7 @@ class ProfileScreen extends StatelessWidget {
                   backgroundColor: Colors.red,
                   foregroundColor: Colors.white,
                 ),
-                child: Text("Next Page"),
+                child: Text("Go to profile"),
               ),
             ],
           ),
