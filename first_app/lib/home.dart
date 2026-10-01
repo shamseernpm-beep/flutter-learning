@@ -19,7 +19,10 @@ class _HomepageState extends State<Homepage> {
         passwordController.text == "1234") {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => ProfileScreen()),
+        MaterialPageRoute(
+          builder: (context) =>
+              ProfileScreen(username: usernameController.text),
+        ),
       );
     } else {
       showDialog(

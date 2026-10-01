@@ -2,7 +2,8 @@ import 'package:first_app/lastscreen.dart';
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({super.key});
+  final String username;
+  const ProfileScreen({super.key, required this.username});
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +23,10 @@ class ProfileScreen extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    Text(
+                      "MY NAME IS $username",
+                      style: TextStyle(color: Colors.white, fontSize: 18),
+                    ),
                     Text(
                       "MY NAME IS MUHAMMED RISWAN P",
                       style: TextStyle(color: Colors.white),
