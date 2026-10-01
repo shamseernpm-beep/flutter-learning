@@ -14,6 +14,13 @@ class ProfileScreen extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
+              Align(
+                alignment: Alignment.topLeft,
+                child: Text(
+                  "WELCOME $username",
+                  style: TextStyle(color: Colors.black, fontSize: 15),
+                ),
+              ),
               Text("This is Profile Screen", style: TextStyle(fontSize: 25)),
               SizedBox(height: 100),
               Container(
@@ -23,10 +30,6 @@ class ProfileScreen extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
-                      "MY NAME IS $username",
-                      style: TextStyle(color: Colors.white, fontSize: 18),
-                    ),
                     Text(
                       "MY NAME IS MUHAMMED RISWAN P",
                       style: TextStyle(color: Colors.white),
