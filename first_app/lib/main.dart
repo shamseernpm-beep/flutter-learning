@@ -1,4 +1,5 @@
 import 'package:first_app/home.dart';
+import 'package:first_app/splash.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +12,6 @@ class Myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: "RISWAN", home: Homepage());
+    return MaterialApp(title: "RISWAN", home: const SplashScreen());
   }
 }
