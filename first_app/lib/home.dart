@@ -11,6 +11,37 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
+  TextEditingController usernameController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
+
+  void login() {
+    if (usernameController.text == "riswan" &&
+        passwordController.text == "1234") {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => ProfileScreen()),
+      );
+    } else {
+      showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            title: Text("login failed"),
+            content: Text("invalid user name or password"),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Text("ok"),
+              ),
+            ],
+          );
+        },
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,6 +69,7 @@ class _HomepageState extends State<Homepage> {
             SizedBox(
               width: 300,
               child: TextField(
+                controller: usernameController,
                 decoration: InputDecoration(
                   hintText: "Enter your full name",
                   prefixIcon: Icon(Icons.person),
@@ -50,9 +82,10 @@ class _HomepageState extends State<Homepage> {
             SizedBox(
               width: 300,
               child: TextField(
+                controller: passwordController,
                 decoration: InputDecoration(
-                  hintText: "Enter your age",
-                  prefixIcon: Icon(Icons.numbers),
+                  hintText: "Enter your password",
+                  prefixIcon: Icon(Icons.password),
                   border: OutlineInputBorder(),
                 ),
               ),
@@ -67,17 +100,12 @@ class _HomepageState extends State<Homepage> {
             SizedBox(height: 10),
 
             ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => ProfileScreen()),
-                );
-              },
+              onPressed: login,
+              child: Text("login"),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.red,
                 foregroundColor: Colors.white,
               ),
-              child: Text("Go to profile"),
             ),
           ],
         ),
