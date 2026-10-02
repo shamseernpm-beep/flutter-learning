@@ -16,6 +16,17 @@ class _LastscreenState extends State<Lastscreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            ListView(
+              children: [
+                ListTile(leading: Icon(Icons.home), title: Text("HOME")),
+                ListTile(leading: Icon(Icons.person), title: Text("PERSON")),
+                ListTile(
+                  leading: Icon(Icons.settings),
+                  title: Text("SETTINGS"),
+                ),
+                ListTile(leading: Icon(Icons.menu), title: Text("MENU")),
+              ],
+            ),
             Container(
               width: 300,
               height: 500,
