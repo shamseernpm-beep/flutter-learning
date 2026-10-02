@@ -12,7 +12,31 @@ class _LastscreenState extends State<Lastscreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Last Screen")),
-      body: Center(child: Text("This is Last Screen")),
+      body: Center(
+        child: Column(
+          children: [
+            Expanded(
+              child: ListView(
+                children: [
+                  Text("apple"),
+                  Text("mango"),
+                  Text("banana"),
+                  Text("mango"),
+                  Text("apple"),
+                  Text("mango"),
+                  Text("apple"),
+                  Text("mango"),
+                  Text("apple"),
+                  Text("mango"),
+                  Text("apple"),
+                  Text("mango"),
+                ],
+              ),
+            ),
+            Text("This is Last Screen"),
+          ],
+        ),
+      ),
     );
   }
 }
