@@ -14,26 +14,26 @@ class _LastscreenState extends State<Lastscreen> {
       appBar: AppBar(title: Text("Last Screen")),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Expanded(
-              child: ListView(
+            Container(
+              width: 300,
+              height: 500,
+              color: Colors.black,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("apple"),
-                  Text("mango"),
-                  Text("banana"),
-                  Text("mango"),
-                  Text("apple"),
-                  Text("mango"),
-                  Text("apple"),
-                  Text("mango"),
-                  Text("apple"),
-                  Text("mango"),
-                  Text("apple"),
-                  Text("mango"),
+                  Text(
+                    "HELLO EVERY ONE",
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
+                  Text(
+                    "THIS IS MY NEW APP",
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
                 ],
               ),
             ),
-            Text("This is Last Screen"),
           ],
         ),
       ),
