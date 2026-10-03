@@ -11,7 +11,7 @@ class _LastscreenState extends State<Lastscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Last Screen")),
+      appBar: AppBar(title: Text("importent Screen")),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -36,6 +36,10 @@ class _LastscreenState extends State<Lastscreen> {
                 children: [
                   Text(
                     "HELLO EVERY ONE",
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
+                  Text(
+                    "WELCOME BACK",
                     style: TextStyle(color: Colors.white, fontSize: 20),
                   ),
                   Text(
