@@ -20,8 +20,26 @@ class _LastscreenState extends State<Lastscreen> {
             ListTile(leading: Icon(Icons.settings), title: Text("SETTINGS")),
             ListTile(leading: Icon(Icons.menu), title: Text("MENU")),
 
-            // Your Container here
+            SizedBox(height: 40),
+            Text(
+              "MY NAME IS MUHAMMED RISWAN P",
+              style: TextStyle(color: Colors.white),
+            ),
+
+            Text(
+              "IAM FROM CALICUT UNIVERSITY",
+              style: TextStyle(color: Colors.white),
+            ),
+            SizedBox(height: 20),
+            Text("CURRETLY WORKING AS ", style: TextStyle(color: Colors.white)),
+            SizedBox(height: 20),
+            Text(
+              "INTERN OF BRIDGEON SOLUTION",
+              style: TextStyle(color: Colors.white),
+            ),
           ],
+
+          // Your Container here
         ),
       ),
     );
