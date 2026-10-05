@@ -62,7 +62,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
             // Subtitle
             const Text(
-              "Welcome to my application",
+              "Welcome to my new app",
               style: TextStyle(color: Colors.white70, fontSize: 16),
             ),
 
