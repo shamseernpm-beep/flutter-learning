@@ -22,12 +22,19 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
               Text("This is Profile Screen", style: TextStyle(fontSize: 25)),
-              SizedBox(height: 100),
+              SizedBox(height: 20),
               SizedBox(
-                height: 40,
-                width: 40,
-                child: Image.asset("asset/images/name.jpeg"),
+                height: 300,
+                width: 300,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(180),
+                  child: Image.asset(
+                    "asset/images/name.jpeg",
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ),
+              SizedBox(height: 20),
               Container(
                 height: 200,
                 width: 300,
@@ -55,51 +62,6 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
 
-              SizedBox(height: 30),
-              SizedBox(
-                width: 300,
-                child: TextField(
-                  decoration: InputDecoration(
-                    hintText: "Enter youre name",
-                    labelText: "name",
-                    border: OutlineInputBorder(),
-                    prefixIcon: Icon(Icons.person),
-                  ),
-                ),
-              ),
-              SizedBox(height: 20),
-              SizedBox(
-                width: 300,
-                child: TextField(
-                  decoration: InputDecoration(
-                    hintText: "Enter your email",
-                    prefixIcon: Icon(Icons.email),
-                    labelText: "email",
-                    border: OutlineInputBorder(),
-                  ),
-                ),
-              ),
-              SizedBox(height: 20),
-              SizedBox(
-                width: 300,
-                child: TextField(
-                  decoration: InputDecoration(
-                    hintText: "enter your password",
-                    prefixIcon: Icon(Icons.key),
-                    border: OutlineInputBorder(),
-                    labelText: "password",
-                  ),
-                ),
-              ),
-              Align(
-                alignment: Alignment.centerRight,
-                child: TextButton(
-                  onPressed: () {
-                    print("forget button is clicked");
-                  },
-                  child: Text("FORGET PASSWORD"),
-                ),
-              ),
               SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {

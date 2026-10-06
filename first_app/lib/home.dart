@@ -63,49 +63,64 @@ class _HomepageState extends State<Homepage> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [Icon(Icons.star), Icon(Icons.edit), Icon(Icons.menu)],
-            ),
-            SizedBox(
-              width: 300,
-              child: TextField(
-                controller: usernameController,
-                decoration: InputDecoration(
-                  hintText: "Enter your full name",
-                  prefixIcon: Icon(Icons.person),
-                  labelText: "name",
-                  border: OutlineInputBorder(),
-                ),
-              ),
-            ),
-            SizedBox(height: 10),
-            SizedBox(
-              width: 300,
-              child: TextField(
-                controller: passwordController,
-                decoration: InputDecoration(
-                  hintText: "Enter your password",
-                  prefixIcon: Icon(Icons.password),
-                  border: OutlineInputBorder(),
-                ),
-              ),
-            ),
+            Container(
+              height: 400,
+              width: 500,
+              color: Colors.lightBlue,
 
-            SizedBox(height: 50),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "THIS IS MY NEW APP",
+                    style: TextStyle(fontSize: 25, color: Colors.white),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.star),
+                      Icon(Icons.edit),
+                      Icon(Icons.menu),
+                    ],
+                  ),
+                  SizedBox(
+                    width: 300,
+                    child: TextField(
+                      controller: usernameController,
+                      decoration: InputDecoration(
+                        hintText: "Enter your full name",
+                        prefixIcon: Icon(Icons.person),
+                        labelText: "name",
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 10),
+                  SizedBox(
+                    width: 300,
+                    child: TextField(
+                      controller: passwordController,
+                      decoration: InputDecoration(
+                        hintText: "Enter your password",
+                        prefixIcon: Icon(Icons.password),
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                  ),
 
-            Text(
-              "THIS IS MY NEW APP",
-              style: TextStyle(fontSize: 25, color: Colors.blue),
-            ),
-            SizedBox(height: 10),
+                  TextButton(onPressed: () {}, child: Text("FORGET PASSWORD")),
 
-            ElevatedButton(
-              onPressed: login,
-              child: Text("login"),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.red,
-                foregroundColor: Colors.white,
+                  SizedBox(height: 10),
+
+                  ElevatedButton(
+                    onPressed: login,
+                    child: Text("login"),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.red,
+                      foregroundColor: Colors.white,
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
