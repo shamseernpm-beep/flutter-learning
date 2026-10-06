@@ -23,6 +23,11 @@ class ProfileScreen extends StatelessWidget {
               ),
               Text("This is Profile Screen", style: TextStyle(fontSize: 25)),
               SizedBox(height: 100),
+              SizedBox(
+                height: 40,
+                width: 40,
+                child: Image.asset("asset/images/name.jpeg"),
+              ),
               Container(
                 height: 200,
                 width: 300,
