@@ -21,6 +21,10 @@ class _LastscreenState extends State<Lastscreen> {
             ListTile(leading: Icon(Icons.menu), title: Text("MENU")),
 
             SizedBox(height: 50),
+            Center(
+              child: Title(color: Colors.black, child: Text("LAST SCREENS")),
+            ),
+            SizedBox(height: 30),
             Container(
               height: 500,
               width: 400,
