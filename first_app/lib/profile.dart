@@ -29,7 +29,7 @@ class ProfileScreen extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(180),
                   child: Image.asset(
-                    "asset/images/name.jpeg",
+                    "assets/images/name.jpeg",
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -62,6 +62,15 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
 
+              SizedBox(height: 30),
+
+              Align(
+                alignment: Alignment.centerRight,
+                child: TextButton(
+                  onPressed: () {},
+                  child: Text("FORGET PASSWORD"),
+                ),
+              ),
               SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
