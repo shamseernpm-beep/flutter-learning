@@ -29,6 +29,7 @@ class ProfileScreen extends StatelessWidget {
                   child: SizedBox(
                     width: 400,
                     child: Card(
+                      elevation: 10,
                       color: const Color.fromARGB(255, 85, 165, 231),
                       child: Column(
                         children: [
@@ -39,6 +40,7 @@ class ProfileScreen extends StatelessWidget {
                             ),
                             subtitle: Text("mango juice"),
                             leading: Icon(Icons.menu),
+                            onTap: () {},
                           ),
                         ],
                       ),
@@ -53,6 +55,7 @@ class ProfileScreen extends StatelessWidget {
                   child: SizedBox(
                     width: 400,
                     child: Card(
+                      elevation: 10,
                       color: const Color.fromARGB(255, 85, 165, 231),
                       child: Column(
                         children: [
@@ -63,6 +66,7 @@ class ProfileScreen extends StatelessWidget {
                             ),
                             subtitle: Text("apple juice"),
                             leading: Icon(Icons.menu),
+                            onTap: () {},
                           ),
                         ],
                       ),
@@ -77,6 +81,7 @@ class ProfileScreen extends StatelessWidget {
                   child: SizedBox(
                     width: 400,
                     child: Card(
+                      elevation: 10,
                       color: const Color.fromARGB(255, 85, 165, 231),
                       child: Column(
                         children: [
@@ -87,6 +92,7 @@ class ProfileScreen extends StatelessWidget {
                             ),
                             subtitle: Text("sp avilum milk"),
                             leading: Icon(Icons.menu),
+                            onTap: () {},
                           ),
                         ],
                       ),
@@ -101,6 +107,7 @@ class ProfileScreen extends StatelessWidget {
                   child: SizedBox(
                     width: 400,
                     child: Card(
+                      elevation: 10,
                       color: const Color.fromARGB(255, 85, 165, 231),
                       child: Column(
                         children: [
@@ -111,6 +118,7 @@ class ProfileScreen extends StatelessWidget {
                             ),
                             subtitle: Text("pinaple lime"),
                             leading: Icon(Icons.menu),
+                            onTap: () {},
                           ),
                         ],
                       ),
@@ -118,6 +126,7 @@ class ProfileScreen extends StatelessWidget {
                   ),
                 ),
               ),
+
               Align(
                 alignment: Alignment.topLeft,
                 child: Padding(
@@ -125,30 +134,7 @@ class ProfileScreen extends StatelessWidget {
                   child: SizedBox(
                     width: 400,
                     child: Card(
-                      color: const Color.fromARGB(255, 85, 165, 231),
-                      child: Column(
-                        children: [
-                          ListTile(
-                            title: Text(
-                              "CHIKKU",
-                              style: TextStyle(fontWeight: FontWeight.w700),
-                            ),
-                            subtitle: Text("chikku shake"),
-                            leading: Icon(Icons.menu),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: Alignment.topLeft,
-                child: Padding(
-                  padding: EdgeInsets.all(12),
-                  child: SizedBox(
-                    width: 400,
-                    child: Card(
+                      elevation: 10,
                       color: const Color.fromARGB(255, 85, 165, 231),
                       child: Column(
                         children: [
@@ -159,6 +145,7 @@ class ProfileScreen extends StatelessWidget {
                             ),
                             subtitle: Text("mint tea"),
                             leading: Icon(Icons.menu),
+                            onTap: () {},
                           ),
                         ],
                       ),
@@ -173,6 +160,7 @@ class ProfileScreen extends StatelessWidget {
                   child: SizedBox(
                     width: 400,
                     child: Card(
+                      elevation: 10,
                       color: const Color.fromARGB(255, 85, 165, 231),
                       child: Column(
                         children: [
@@ -183,6 +171,7 @@ class ProfileScreen extends StatelessWidget {
                             ),
                             subtitle: Text("michein coffe"),
                             leading: Icon(Icons.menu),
+                            onTap: () {},
                           ),
                         ],
                       ),
@@ -190,30 +179,7 @@ class ProfileScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              Align(
-                alignment: Alignment.topLeft,
-                child: Padding(
-                  padding: EdgeInsets.all(12),
-                  child: SizedBox(
-                    width: 400,
-                    child: Card(
-                      color: const Color.fromARGB(255, 85, 165, 231),
-                      child: Column(
-                        children: [
-                          ListTile(
-                            title: Text(
-                              "BANANA",
-                              style: TextStyle(fontWeight: FontWeight.w700),
-                            ),
-                            subtitle: Text("banana shake"),
-                            leading: Icon(Icons.menu),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ),
+
               SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
