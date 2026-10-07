@@ -64,10 +64,9 @@ class _HomepageState extends State<Homepage> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Container(
-              height: 400,
+              height: 500,
               width: 500,
               color: Colors.lightBlue,
-
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -75,6 +74,7 @@ class _HomepageState extends State<Homepage> {
                     "THIS IS MY NEW APP",
                     style: TextStyle(fontSize: 25, color: Colors.white),
                   ),
+
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -83,6 +83,7 @@ class _HomepageState extends State<Homepage> {
                       Icon(Icons.menu),
                     ],
                   ),
+
                   SizedBox(
                     width: 300,
                     child: TextField(
@@ -95,11 +96,14 @@ class _HomepageState extends State<Homepage> {
                       ),
                     ),
                   ),
+
                   SizedBox(height: 10),
+
                   SizedBox(
                     width: 300,
                     child: TextField(
                       controller: passwordController,
+                      obscureText: true,
                       decoration: InputDecoration(
                         hintText: "Enter your password",
                         prefixIcon: Icon(Icons.password),
@@ -108,18 +112,24 @@ class _HomepageState extends State<Homepage> {
                     ),
                   ),
 
-                  TextButton(onPressed: () {}, child: Text("FORGET PASSWORD")),
-
                   SizedBox(height: 10),
 
                   ElevatedButton(
                     onPressed: login,
-                    child: Text("login"),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.red,
                       foregroundColor: Colors.white,
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 50,
+                        vertical: 15,
+                      ),
                     ),
+                    child: Text("LOGIN"),
                   ),
+
+                  SizedBox(height: 10),
+
+                  TextButton(onPressed: () {}, child: Text("FORGET PASSWORD")),
                 ],
               ),
             ),
