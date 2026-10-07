@@ -45,6 +45,7 @@ class _LastscreenState extends State<Lastscreen> {
                 style: TextStyle(fontSize: 35, color: Colors.red),
               ),
             ),
+            Center(child: Container(height: 2, width: 80, color: Colors.black)),
             SizedBox(height: 30),
             Center(
               child: Row(
