@@ -52,6 +52,7 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 169, 205, 235),
       appBar: AppBar(
         actions: [Icon(Icons.star), Icon(Icons.search)],
         leading: IconButton(
@@ -70,17 +71,31 @@ class _HomepageState extends State<Homepage> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Container(
-              margin: const EdgeInsets.all(20),
-              width: double.infinity,
-              color: Colors.lightBlue,
+              width: 400,
+              height: 450,
+              padding: const EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 82, 175, 251),
+                borderRadius: BorderRadius.circular(20),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black,
+                    blurRadius: 15,
+                    spreadRadius: 3,
+                    offset: Offset(7, 9),
+                  ),
+                ],
+              ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  // your existing widgets
                   Text(
                     "THIS IS MY NEW APP",
-                    style: TextStyle(fontSize: 25, color: Colors.white),
+                    style: TextStyle(fontSize: 25, color: Colors.black),
                   ),
 
+                  SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -89,7 +104,7 @@ class _HomepageState extends State<Homepage> {
                       Icon(Icons.menu),
                     ],
                   ),
-
+                  SizedBox(height: 20),
                   SizedBox(
                     width: 300,
                     child: TextField(
@@ -123,8 +138,8 @@ class _HomepageState extends State<Homepage> {
                   ElevatedButton(
                     onPressed: login,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.red,
-                      foregroundColor: Colors.white,
+                      backgroundColor: Colors.blue,
+                      foregroundColor: Colors.black,
                       padding: EdgeInsets.symmetric(
                         horizontal: 50,
                         vertical: 15,

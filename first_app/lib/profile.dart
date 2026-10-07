@@ -8,6 +8,7 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 126, 191, 245),
       appBar: AppBar(title: Text("Profile"), backgroundColor: Colors.blue),
       body: SingleChildScrollView(
         child: Center(
@@ -21,58 +22,196 @@ class ProfileScreen extends StatelessWidget {
                   style: TextStyle(color: Colors.black, fontSize: 15),
                 ),
               ),
-              const Text(
-                "This is Profile Screen",
-                style: TextStyle(fontSize: 25),
-              ),
-              SizedBox(height: 20),
-              SizedBox(
-                height: 300,
-                width: 300,
-                child: ClipOval(
-                  child: Image.asset(
-                    "assets/images/name.jpeg",
-                    height: 300,
-                    width: 300,
-                    fit: BoxFit.cover,
+              Align(
+                alignment: Alignment.topLeft,
+                child: Padding(
+                  padding: EdgeInsets.all(12),
+                  child: SizedBox(
+                    width: 400,
+                    child: Card(
+                      color: const Color.fromARGB(255, 85, 165, 231),
+                      child: Column(
+                        children: [
+                          ListTile(
+                            title: Text(
+                              "MANGO",
+                              style: TextStyle(fontWeight: FontWeight.w700),
+                            ),
+                            subtitle: Text("mango juice"),
+                            leading: Icon(Icons.menu),
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                 ),
               ),
-              SizedBox(height: 20),
-              Container(
-                height: 200,
-                width: 300,
-                color: Colors.black,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "MY NAME IS MUHAMMED RISWAN P",
-                      style: TextStyle(color: Colors.white),
+              Align(
+                alignment: Alignment.topLeft,
+                child: Padding(
+                  padding: EdgeInsets.all(12),
+                  child: SizedBox(
+                    width: 400,
+                    child: Card(
+                      color: const Color.fromARGB(255, 85, 165, 231),
+                      child: Column(
+                        children: [
+                          ListTile(
+                            title: Text(
+                              "APPLE",
+                              style: TextStyle(fontWeight: FontWeight.w700),
+                            ),
+                            subtitle: Text("apple juice"),
+                            leading: Icon(Icons.menu),
+                          ),
+                        ],
+                      ),
                     ),
-                    Text(
-                      "IAM FROM CALICUT UNIVERSITY",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                    Text(
-                      "CURRETLY WORKING AS ",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                    Text(
-                      "INTERN OF BRIDGEON SOLUTION",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ],
+                  ),
                 ),
               ),
-
-              SizedBox(height: 30),
-
               Align(
-                alignment: Alignment.centerRight,
-                child: TextButton(
-                  onPressed: () {},
-                  child: Text("FORGET PASSWORD"),
+                alignment: Alignment.topLeft,
+                child: Padding(
+                  padding: EdgeInsets.all(12),
+                  child: SizedBox(
+                    width: 400,
+                    child: Card(
+                      color: const Color.fromARGB(255, 85, 165, 231),
+                      child: Column(
+                        children: [
+                          ListTile(
+                            title: Text(
+                              "SP",
+                              style: TextStyle(fontWeight: FontWeight.w700),
+                            ),
+                            subtitle: Text("sp avilum milk"),
+                            leading: Icon(Icons.menu),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: Alignment.topLeft,
+                child: Padding(
+                  padding: EdgeInsets.all(12),
+                  child: SizedBox(
+                    width: 400,
+                    child: Card(
+                      color: const Color.fromARGB(255, 85, 165, 231),
+                      child: Column(
+                        children: [
+                          ListTile(
+                            title: Text(
+                              "LIME",
+                              style: TextStyle(fontWeight: FontWeight.w700),
+                            ),
+                            subtitle: Text("pinaple lime"),
+                            leading: Icon(Icons.menu),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: Alignment.topLeft,
+                child: Padding(
+                  padding: EdgeInsets.all(12),
+                  child: SizedBox(
+                    width: 400,
+                    child: Card(
+                      color: const Color.fromARGB(255, 85, 165, 231),
+                      child: Column(
+                        children: [
+                          ListTile(
+                            title: Text(
+                              "CHIKKU",
+                              style: TextStyle(fontWeight: FontWeight.w700),
+                            ),
+                            subtitle: Text("chikku shake"),
+                            leading: Icon(Icons.menu),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: Alignment.topLeft,
+                child: Padding(
+                  padding: EdgeInsets.all(12),
+                  child: SizedBox(
+                    width: 400,
+                    child: Card(
+                      color: const Color.fromARGB(255, 85, 165, 231),
+                      child: Column(
+                        children: [
+                          ListTile(
+                            title: Text(
+                              "TEA",
+                              style: TextStyle(fontWeight: FontWeight.w700),
+                            ),
+                            subtitle: Text("mint tea"),
+                            leading: Icon(Icons.menu),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: Alignment.topLeft,
+                child: Padding(
+                  padding: EdgeInsets.all(12),
+                  child: SizedBox(
+                    width: 400,
+                    child: Card(
+                      color: const Color.fromARGB(255, 85, 165, 231),
+                      child: Column(
+                        children: [
+                          ListTile(
+                            title: Text(
+                              "COFFIE",
+                              style: TextStyle(fontWeight: FontWeight.w700),
+                            ),
+                            subtitle: Text("michein coffe"),
+                            leading: Icon(Icons.menu),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: Alignment.topLeft,
+                child: Padding(
+                  padding: EdgeInsets.all(12),
+                  child: SizedBox(
+                    width: 400,
+                    child: Card(
+                      color: const Color.fromARGB(255, 85, 165, 231),
+                      child: Column(
+                        children: [
+                          ListTile(
+                            title: Text(
+                              "BANANA",
+                              style: TextStyle(fontWeight: FontWeight.w700),
+                            ),
+                            subtitle: Text("banana shake"),
+                            leading: Icon(Icons.menu),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                 ),
               ),
               SizedBox(height: 30),
@@ -84,7 +223,7 @@ class ProfileScreen extends StatelessWidget {
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.red,
+                  backgroundColor: Colors.blue,
                   foregroundColor: Colors.white,
                 ),
                 child: Text("Go to main page"),
