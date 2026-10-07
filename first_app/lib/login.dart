@@ -50,7 +50,7 @@ class _HomepageState extends State<Homepage> {
         actions: [Icon(Icons.star), Icon(Icons.search)],
         leading: IconButton(
           onPressed: () {
-            print("Home page is clicked");
+            debugPrint("Home page is clicked");
           },
           icon: Icon(Icons.home),
         ),
