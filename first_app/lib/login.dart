@@ -11,11 +11,17 @@ class Homepage extends StatefulWidget {
 class _HomepageState extends State<Homepage> {
   TextEditingController usernameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+  @override
+  void dispose() {
+    usernameController.dispose();
+    passwordController.dispose();
+    super.dispose();
+  }
 
   void login() {
     if (usernameController.text == "riswan" &&
         passwordController.text == "1234") {
-      Navigator.push(
+      Navigator.pushReplacement(
         context,
         MaterialPageRoute(
           builder: (context) =>
@@ -64,8 +70,8 @@ class _HomepageState extends State<Homepage> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Container(
-              height: 500,
-              width: 500,
+              margin: const EdgeInsets.all(20),
+              width: double.infinity,
               color: Colors.lightBlue,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,

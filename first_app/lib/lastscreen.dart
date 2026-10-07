@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 
-class Lastscreen extends StatefulWidget {
+class Lastscreen extends StatelessWidget {
   const Lastscreen({super.key});
 
   @override
-  State<Lastscreen> createState() => _LastscreenState();
-}
-
-class _LastscreenState extends State<Lastscreen> {
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("importent Screen")),
+      appBar: AppBar(
+        title: Text("importent Screen"),
+        backgroundColor: Colors.blue,
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -48,8 +46,10 @@ class _LastscreenState extends State<Lastscreen> {
             Center(child: Container(height: 2, width: 80, color: Colors.black)),
             SizedBox(height: 40),
             Center(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+              child: Wrap(
+                alignment: WrapAlignment.center,
+                spacing: 20,
+                runSpacing: 20,
                 children: [
                   Container(
                     height: 100,
@@ -74,7 +74,7 @@ class _LastscreenState extends State<Lastscreen> {
                       ),
                     ),
                   ),
-                  SizedBox(width: 50),
+
                   Container(
                     height: 100,
                     width: 100,
@@ -95,7 +95,7 @@ class _LastscreenState extends State<Lastscreen> {
                       child: Text("CSS", style: TextStyle(color: Colors.black)),
                     ),
                   ),
-                  SizedBox(width: 50),
+
                   Container(
                     height: 100,
                     width: 100,
@@ -119,7 +119,7 @@ class _LastscreenState extends State<Lastscreen> {
                       ),
                     ),
                   ),
-                  SizedBox(width: 50),
+
                   Container(
                     height: 100,
                     width: 100,

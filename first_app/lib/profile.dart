@@ -8,7 +8,7 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Profile")),
+      appBar: AppBar(title: Text("Profile"), backgroundColor: Colors.blue),
       body: SingleChildScrollView(
         child: Center(
           child: Column(
@@ -21,15 +21,19 @@ class ProfileScreen extends StatelessWidget {
                   style: TextStyle(color: Colors.black, fontSize: 15),
                 ),
               ),
-              Text("This is Profile Screen", style: TextStyle(fontSize: 25)),
+              const Text(
+                "This is Profile Screen",
+                style: TextStyle(fontSize: 25),
+              ),
               SizedBox(height: 20),
               SizedBox(
                 height: 300,
                 width: 300,
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(180),
+                child: ClipOval(
                   child: Image.asset(
                     "assets/images/name.jpeg",
+                    height: 300,
+                    width: 300,
                     fit: BoxFit.cover,
                   ),
                 ),
