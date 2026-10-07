@@ -38,7 +38,7 @@ class _LastscreenState extends State<Lastscreen> {
               ),
             ),
 
-            SizedBox(height: 40),
+            SizedBox(height: 50),
             Center(
               child: Text(
                 "SKILLS",
@@ -46,7 +46,7 @@ class _LastscreenState extends State<Lastscreen> {
               ),
             ),
             Center(child: Container(height: 2, width: 80, color: Colors.black)),
-            SizedBox(height: 30),
+            SizedBox(height: 40),
             Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -150,6 +150,39 @@ class _LastscreenState extends State<Lastscreen> {
             // ListTile(leading: Icon(Icons.person), title: Text("PERSON")),
             // ListTile(leading: Icon(Icons.settings), title: Text("SETTINGS")),
             // ListTile(leading: Icon(Icons.menu), title: Text("MENU")),
+            SizedBox(height: 50),
+            Center(
+              child: Text(
+                "COURSE",
+                style: TextStyle(fontSize: 35, color: Colors.red),
+              ),
+            ),
+            Center(child: Container(height: 2, width: 80, color: Colors.black)),
+
+            SizedBox(height: 40),
+            Container(
+              height: 100,
+              width: 100,
+              // color: Colors.amber,
+              decoration: BoxDecoration(
+                color: Colors.amber,
+                borderRadius: BorderRadius.circular(10),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black,
+                    blurRadius: 15,
+                    spreadRadius: 3,
+                    offset: Offset(5, 5),
+                  ),
+                ],
+              ),
+              child: Center(
+                child: Text(
+                  "FLUTTER",
+                  style: TextStyle(color: Colors.black, fontSize: 15),
+                ),
+              ),
+            ),
           ],
 
           // Your Container here
