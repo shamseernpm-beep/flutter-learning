@@ -14,7 +14,7 @@ class Myapp extends StatelessWidget {
     return MaterialApp(
       title: "RISWAN",
       home: const SplashScreen(),
-      theme: ThemeData(primaryColor: Colors.blue),
+      theme: ThemeData(primaryColor: Colors.red),
     );
   }
 }

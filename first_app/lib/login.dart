@@ -49,10 +49,13 @@ class _HomepageState extends State<Homepage> {
     }
   }
 
+  //Color barcaBlue = const Color(0xFF004D98);
+  //Color barcaRed = const Color(0xFFA50044);
+  //Color barcaGold = const Color(0xFFEDBB00);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 169, 205, 235),
+      backgroundColor: const Color(0xFF004D98),
       appBar: AppBar(
         actions: [Icon(Icons.star), Icon(Icons.search)],
         leading: IconButton(
@@ -61,10 +64,16 @@ class _HomepageState extends State<Homepage> {
           },
           icon: Icon(Icons.home),
         ),
-        title: Text("RISWAN APP"),
+        title: Text(
+          "BARCELONA",
+          style: TextStyle(
+            color: const Color(0xFFEDBB00),
+            fontWeight: FontWeight(700),
+          ),
+        ),
         centerTitle: true,
 
-        backgroundColor: Colors.blue,
+        backgroundColor: const Color(0xFFA50044),
       ),
       body: Center(
         child: Column(
@@ -75,7 +84,7 @@ class _HomepageState extends State<Homepage> {
               height: 450,
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 82, 175, 251),
+                color: const Color(0xFFA50044),
                 borderRadius: BorderRadius.circular(20),
                 boxShadow: [
                   BoxShadow(
@@ -91,8 +100,12 @@ class _HomepageState extends State<Homepage> {
                 children: [
                   // your existing widgets
                   Text(
-                    "THIS IS MY NEW APP",
-                    style: TextStyle(fontSize: 25, color: Colors.black),
+                    "VICA BARCA",
+                    style: TextStyle(
+                      fontSize: 25,
+                      color: Color(0xFFEDBB00),
+                      fontWeight: FontWeight(700),
+                    ),
                   ),
 
                   SizedBox(height: 20),
@@ -138,7 +151,7 @@ class _HomepageState extends State<Homepage> {
                   ElevatedButton(
                     onPressed: login,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
+                      backgroundColor: const Color(0xFFEDBB00),
                       foregroundColor: Colors.black,
                       padding: EdgeInsets.symmetric(
                         horizontal: 50,
