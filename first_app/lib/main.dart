@@ -11,6 +11,10 @@ class Myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: "RISWAN", home: const SplashScreen());
+    return MaterialApp(
+      title: "RISWAN",
+      home: const SplashScreen(),
+      theme: ThemeData(primaryColor: Colors.blue),
+    );
   }
 }
