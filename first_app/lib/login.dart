@@ -49,21 +49,14 @@ class _HomepageState extends State<Homepage> {
     }
   }
 
-  //Color barcaBlue = const Color(0xFF004D98);
-  //Color barcaRed = const Color(0xFFA50044);
-  //Color barcaGold = const Color(0xFFEDBB00);
+  //Color barcaBlue = const Color(0xFF004D98);  blue
+  //Color barcaRed = const Color(0xFFA50044);   red
+  //Color barcaGold = const Color(0xFFEDBB00);  yellow
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFF004D98),
       appBar: AppBar(
-        actions: [Icon(Icons.star), Icon(Icons.search)],
-        leading: IconButton(
-          onPressed: () {
-            debugPrint("Home page is clicked");
-          },
-          icon: Icon(Icons.home),
-        ),
         title: Text(
           "BARCELONA",
           style: TextStyle(
@@ -107,15 +100,22 @@ class _HomepageState extends State<Homepage> {
                       fontWeight: FontWeight(700),
                     ),
                   ),
-                  SizedBox(height: 30),
+                  SizedBox(height: 10),
+                  Container(
+                    height: 90,
+                    width: 120,
+                    child: Image.asset("assets/images/logo.png"),
+                  ),
+                  SizedBox(height: 20),
                   SizedBox(
                     width: 300,
                     child: TextField(
                       controller: usernameController,
                       decoration: InputDecoration(
                         hintText: "Enter your full name",
+                        hintStyle: TextStyle(color: const Color(0xFFEDBB00)),
                         prefixIcon: Icon(Icons.person),
-                        labelText: "name",
+                        // labelText: "name",
                         border: OutlineInputBorder(),
                       ),
                     ),
@@ -128,8 +128,10 @@ class _HomepageState extends State<Homepage> {
                     child: TextField(
                       controller: passwordController,
                       obscureText: true,
+
                       decoration: InputDecoration(
                         hintText: "Enter your password",
+                        hintStyle: TextStyle(color: const Color(0xFFEDBB00)),
                         prefixIcon: Icon(Icons.password),
                         border: OutlineInputBorder(),
                       ),
@@ -153,7 +155,13 @@ class _HomepageState extends State<Homepage> {
 
                   SizedBox(height: 10),
 
-                  TextButton(onPressed: () {}, child: Text("FORGET PASSWORD")),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      "FORGET PASSWORD",
+                      style: TextStyle(color: const Color(0xFFEDBB00)),
+                    ),
+                  ),
                 ],
               ),
             ),
