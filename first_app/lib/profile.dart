@@ -130,23 +130,25 @@ class ProfileScreen extends StatelessWidget {
                 alignment: Alignment.topLeft,
                 child: Padding(
                   padding: EdgeInsets.all(12),
-                  child: SizedBox(
-                    width: 400,
-                    child: Card(
-                      elevation: 10,
-                      color: const Color.fromARGB(255, 85, 165, 231),
-                      child: Column(
-                        children: [
-                          ListTile(
-                            title: Text(
-                              "TEA",
-                              style: TextStyle(fontWeight: FontWeight.w700),
+                  child: Container(
+                    child: SizedBox(
+                      width: 400,
+                      child: Card(
+                        elevation: 10,
+                        color: const Color.fromARGB(255, 85, 165, 231),
+                        child: Column(
+                          children: [
+                            ListTile(
+                              title: Text(
+                                "TEA",
+                                style: TextStyle(fontWeight: FontWeight.w700),
+                              ),
+                              subtitle: Text("mint tea"),
+                              leading: Icon(Icons.menu),
+                              onTap: () {},
                             ),
-                            subtitle: Text("mint tea"),
-                            leading: Icon(Icons.menu),
-                            onTap: () {},
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   ),
