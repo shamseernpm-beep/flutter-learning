@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 //Color barcaGold = const Color(0xFFEDBB00);  yellow
 
 class ProfileScreen extends StatelessWidget {
-  final String username;
+  final String? username;
   const ProfileScreen({super.key, required this.username});
 
   @override
@@ -14,9 +14,15 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFF004D98),
       appBar: AppBar(
-        title: Text(
-          "Profile",
-          style: TextStyle(color: const Color(0xFFEDBB00)),
+        title: Center(
+          child: Text(
+            "PLAYERS  PROFILE",
+            style: TextStyle(
+              color: const Color(0xFFEDBB00),
+              fontSize: 30,
+              fontWeight: FontWeight(700),
+            ),
+          ),
         ),
         backgroundColor: const Color(0xFFA50044),
       ),
