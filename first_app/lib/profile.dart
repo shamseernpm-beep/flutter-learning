@@ -130,7 +130,7 @@ class ProfileScreen extends StatelessWidget {
                 alignment: Alignment.topLeft,
                 child: Padding(
                   padding: EdgeInsets.all(12),
-                  child: Container(
+                  child: SizedBox(
                     child: SizedBox(
                       width: 400,
                       child: Card(
