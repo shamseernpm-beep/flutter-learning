@@ -107,17 +107,7 @@ class _HomepageState extends State<Homepage> {
                       fontWeight: FontWeight(700),
                     ),
                   ),
-
-                  SizedBox(height: 20),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(Icons.star),
-                      Icon(Icons.edit),
-                      Icon(Icons.menu),
-                    ],
-                  ),
-                  SizedBox(height: 20),
+                  SizedBox(height: 30),
                   SizedBox(
                     width: 300,
                     child: TextField(
