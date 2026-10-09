@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
 
+//Color barcaBlue = const Color(0xFF004D98);  blue
+//Color barcaRed = const Color(0xFFA50044);   red
+//Color barcaGold = const Color(0xFFEDBB00);  yellow
+
 class Messi extends StatelessWidget {
   const Messi({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFF004D98),
       appBar: AppBar(
         title: Text("importent Screen"),
-        backgroundColor: Colors.blue,
+        backgroundColor: const Color(0xFFA50044),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -28,11 +33,11 @@ class Messi extends StatelessWidget {
                   ),
                 ],
               ),
-              child: ClipOval(
-                child: Image.asset(
-                  "assets/images/riswan.jpeg",
-                  fit: BoxFit.cover,
-                ),
+              child: Container(
+                height: 300,
+                width: 500,
+
+                child: Image.asset("assets/images/leo.webp", fit: BoxFit.cover),
               ),
             ),
 
