@@ -1,4 +1,4 @@
-import 'package:first_app/lastscreen.dart';
+import 'package:first_app/messi.dart';
 import 'package:flutter/material.dart';
 
 //Color barcaBlue = const Color(0xFF004D98);  blue
@@ -65,7 +65,14 @@ class ProfileScreen extends StatelessWidget {
                               style: TextStyle(color: Colors.white),
                             ),
                             leading: Icon(Icons.menu),
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => Messi(),
+                                ),
+                              );
+                            },
                           ),
                         ],
                       ),
@@ -398,19 +405,19 @@ class ProfileScreen extends StatelessWidget {
               ),
 
               SizedBox(height: 30),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Lastscreen()),
-                  );
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue,
-                  foregroundColor: Colors.white,
-                ),
-                child: Text("Go to main page"),
-              ),
+              // ElevatedButton(
+              //   onPressed: () {
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => Messi()),
+              //     );
+              //   },
+              //   style: ElevatedButton.styleFrom(
+              //     backgroundColor: Colors.blue,
+              //     foregroundColor: Colors.white,
+              //   ),
+              //   child: Text("Go to main page"),
+              // ),
             ],
           ),
         ),

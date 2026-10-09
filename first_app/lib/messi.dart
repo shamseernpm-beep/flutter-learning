@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Lastscreen extends StatelessWidget {
-  const Lastscreen({super.key});
+class Messi extends StatelessWidget {
+  const Messi({super.key});
 
   @override
   Widget build(BuildContext context) {
