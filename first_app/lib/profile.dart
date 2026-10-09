@@ -54,14 +54,14 @@ class ProfileScreen extends StatelessWidget {
                         children: [
                           ListTile(
                             title: Text(
-                              "MANGO",
+                              "LIONEL MESSI",
                               style: TextStyle(
                                 fontWeight: FontWeight.w700,
                                 color: const Color(0xFFEDBB00),
                               ),
                             ),
                             subtitle: Text(
-                              "mango juice",
+                              "RWF",
                               style: TextStyle(color: Colors.white),
                             ),
                             leading: Icon(Icons.menu),
@@ -86,14 +86,14 @@ class ProfileScreen extends StatelessWidget {
                         children: [
                           ListTile(
                             title: Text(
-                              "APPLE",
+                              "NEYMAR JR",
                               style: TextStyle(
                                 fontWeight: FontWeight.w700,
                                 color: const Color(0xFFEDBB00),
                               ),
                             ),
                             subtitle: Text(
-                              "apple juice",
+                              "LWF",
                               style: TextStyle(color: Colors.white),
                             ),
                             leading: Icon(Icons.menu),
@@ -118,14 +118,14 @@ class ProfileScreen extends StatelessWidget {
                         children: [
                           ListTile(
                             title: Text(
-                              "SP",
+                              "SUAREZ",
                               style: TextStyle(
                                 fontWeight: FontWeight.w700,
                                 color: const Color(0xFFEDBB00),
                               ),
                             ),
                             subtitle: Text(
-                              "sp avilum milk",
+                              "CF",
                               style: TextStyle(color: Colors.white),
                             ),
                             leading: Icon(Icons.menu),
@@ -150,14 +150,14 @@ class ProfileScreen extends StatelessWidget {
                         children: [
                           ListTile(
                             title: Text(
-                              "LIME",
+                              "INIESTA",
                               style: TextStyle(
                                 fontWeight: FontWeight.w700,
                                 color: const Color(0xFFEDBB00),
                               ),
                             ),
                             subtitle: Text(
-                              "pinaple lime",
+                              "CMF",
                               style: TextStyle(color: Colors.white),
                             ),
                             leading: Icon(Icons.menu),
@@ -184,14 +184,14 @@ class ProfileScreen extends StatelessWidget {
                           children: [
                             ListTile(
                               title: Text(
-                                "TEA",
+                                "RAKITIC",
                                 style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: const Color(0xFFEDBB00),
                                 ),
                               ),
                               subtitle: Text(
-                                "mint tea",
+                                "CMF",
                                 style: TextStyle(color: Colors.white),
                               ),
                               leading: Icon(Icons.menu),
@@ -217,14 +217,174 @@ class ProfileScreen extends StatelessWidget {
                         children: [
                           ListTile(
                             title: Text(
-                              "COFFIE",
+                              "BUSQUEST",
                               style: TextStyle(
                                 fontWeight: FontWeight.w700,
                                 color: const Color(0xFFEDBB00),
                               ),
                             ),
                             subtitle: Text(
-                              "michein coffe",
+                              "DMF",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            leading: Icon(Icons.menu),
+                            onTap: () {},
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: Alignment.topLeft,
+                child: Padding(
+                  padding: EdgeInsets.all(12),
+                  child: SizedBox(
+                    width: 400,
+                    child: Card(
+                      elevation: 10,
+                      color: const Color(0xFFA50044),
+                      child: Column(
+                        children: [
+                          ListTile(
+                            title: Text(
+                              "ALVES",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                color: const Color(0xFFEDBB00),
+                              ),
+                            ),
+                            subtitle: Text(
+                              "RB",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            leading: Icon(Icons.menu),
+                            onTap: () {},
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: Alignment.topLeft,
+                child: Padding(
+                  padding: EdgeInsets.all(12),
+                  child: SizedBox(
+                    width: 400,
+                    child: Card(
+                      elevation: 10,
+                      color: const Color(0xFFA50044),
+                      child: Column(
+                        children: [
+                          ListTile(
+                            title: Text(
+                              "ALBA",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                color: const Color(0xFFEDBB00),
+                              ),
+                            ),
+                            subtitle: Text(
+                              "LB",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            leading: Icon(Icons.menu),
+                            onTap: () {},
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: Alignment.topLeft,
+                child: Padding(
+                  padding: EdgeInsets.all(12),
+                  child: SizedBox(
+                    width: 400,
+                    child: Card(
+                      elevation: 10,
+                      color: const Color(0xFFA50044),
+                      child: Column(
+                        children: [
+                          ListTile(
+                            title: Text(
+                              "PIOUE",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                color: const Color(0xFFEDBB00),
+                              ),
+                            ),
+                            subtitle: Text(
+                              "CB",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            leading: Icon(Icons.menu),
+                            onTap: () {},
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: Alignment.topLeft,
+                child: Padding(
+                  padding: EdgeInsets.all(12),
+                  child: SizedBox(
+                    width: 400,
+                    child: Card(
+                      elevation: 10,
+                      color: const Color(0xFFA50044),
+                      child: Column(
+                        children: [
+                          ListTile(
+                            title: Text(
+                              "MASCHERANO",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                color: const Color(0xFFEDBB00),
+                              ),
+                            ),
+                            subtitle: Text(
+                              "CB",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            leading: Icon(Icons.menu),
+                            onTap: () {},
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: Alignment.topLeft,
+                child: Padding(
+                  padding: EdgeInsets.all(12),
+                  child: SizedBox(
+                    width: 400,
+                    child: Card(
+                      elevation: 10,
+                      color: const Color(0xFFA50044),
+                      child: Column(
+                        children: [
+                          ListTile(
+                            title: Text(
+                              "TER STAGEN",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                color: const Color(0xFFEDBB00),
+                              ),
+                            ),
+                            subtitle: Text(
+                              "GK",
                               style: TextStyle(color: Colors.white),
                             ),
                             leading: Icon(Icons.menu),
