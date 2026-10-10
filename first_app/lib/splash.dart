@@ -29,9 +29,9 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: Colors.black,
       body: Center(
         child: Container(
-          height: 500,
-          width: 800,
-          child: Image.asset("assets/images/barca.jpg"),
+          height: 400,
+          width: 700,
+          child: Image.asset("assets/images/leaf.png"),
         ),
       ),
     );
