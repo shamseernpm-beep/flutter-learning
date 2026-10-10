@@ -85,6 +85,11 @@ class Messi extends StatelessWidget {
                         width: 170,
                         color: const Color(0xFFEDBB00),
                       ),
+
+                      Align(
+                        alignment: AlignmentGeometry.topLeft,
+                        child: Column(children: [Text("GOELS : ")]),
+                      ),
                     ],
                   ),
                 ),

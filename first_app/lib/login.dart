@@ -74,81 +74,86 @@ class _HomepageState extends State<Homepage> {
                   ),
                 ],
               ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  // your existing widgets
-                  Text(
-                    "VICA BARCA",
-                    style: TextStyle(
-                      fontSize: 25,
-                      color: Color(0xFFEDBB00),
-                      fontWeight: FontWeight(700),
-                    ),
-                  ),
-                  SizedBox(height: 10),
-                  Container(
-                    height: 90,
-                    width: 120,
-                    child: Image.asset("assets/images/logo.png"),
-                  ),
-                  SizedBox(height: 20),
-                  SizedBox(
-                    width: 300,
-                    child: TextField(
-                      controller: usernameController,
-                      decoration: InputDecoration(
-                        hintText: "Enter your full name",
-                        hintStyle: TextStyle(color: const Color(0xFFEDBB00)),
-                        prefixIcon: Icon(Icons.person),
-                        // labelText: "name",
-                        border: OutlineInputBorder(),
+              child: Padding(
+                padding: const EdgeInsets.all(20),
+                child: Column(
+                  children: [
+                    Align(
+                      alignment: Alignment.topCenter,
+                      child: Text(
+                        "WELCOME",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight(600),
+                        ),
                       ),
                     ),
-                  ),
-
-                  SizedBox(height: 10),
-
-                  SizedBox(
-                    width: 300,
-                    child: TextField(
-                      controller: passwordController,
-                      obscureText: true,
-
-                      decoration: InputDecoration(
-                        hintText: "Enter your password",
-                        hintStyle: TextStyle(color: const Color(0xFFEDBB00)),
-                        prefixIcon: Icon(Icons.password),
-                        border: OutlineInputBorder(),
+                    SizedBox(height: 50),
+                    SizedBox(
+                      width: 300,
+                      child: TextField(
+                        controller: usernameController,
+                        decoration: InputDecoration(
+                          hintText: "Enter your full name",
+                          filled: true,
+                          fillColor: const Color(0xFFFAF9F6),
+                          prefixIcon: Icon(Icons.person),
+                          // labelText: "name",
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                        ),
                       ),
                     ),
-                  ),
 
-                  SizedBox(height: 10),
+                    SizedBox(height: 10),
 
-                  ElevatedButton(
-                    onPressed: login,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFFEDBB00),
-                      foregroundColor: Colors.black,
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 50,
-                        vertical: 15,
+                    SizedBox(
+                      width: 300,
+                      child: TextField(
+                        controller: passwordController,
+                        obscureText: true,
+
+                        decoration: InputDecoration(
+                          hintText: "Enter your password",
+                          fillColor: const Color(0xFFFAF9F6),
+                          filled: true,
+                          prefixIcon: Icon(Icons.password),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                        ),
                       ),
                     ),
-                    child: Text("LOGIN"),
-                  ),
 
-                  SizedBox(height: 10),
-
-                  TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      "FORGET PASSWORD",
-                      style: TextStyle(color: const Color(0xFFEDBB00)),
+                    Align(
+                      alignment: Alignment.topRight,
+                      child: TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "FORGET PASSWORD",
+                          style: TextStyle(color: Colors.red),
+                        ),
+                      ),
                     ),
-                  ),
-                ],
+                    SizedBox(height: 10),
+
+                    ElevatedButton(
+                      onPressed: login,
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFFFAF9F6),
+                        foregroundColor: Colors.black,
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 50,
+                          vertical: 15,
+                        ),
+                      ),
+                      child: Text("LOGIN"),
+                    ),
+
+                    SizedBox(height: 10),
+                  ],
+                ),
               ),
             ),
           ],
