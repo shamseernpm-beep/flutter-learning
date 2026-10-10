@@ -33,16 +33,6 @@ class ProfileScreen extends StatelessWidget {
             children: [
               Align(
                 alignment: Alignment.topLeft,
-                child: Text(
-                  "WELCOME $username",
-                  style: TextStyle(
-                    color: const Color(0xFFEDBB00),
-                    fontSize: 15,
-                  ),
-                ),
-              ),
-              Align(
-                alignment: Alignment.topLeft,
                 child: Padding(
                   padding: EdgeInsets.all(12),
                   child: SizedBox(
