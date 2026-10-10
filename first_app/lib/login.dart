@@ -68,9 +68,9 @@ class _HomepageState extends State<Homepage> {
                 boxShadow: [
                   BoxShadow(
                     color: Colors.black,
-                    blurRadius: 15,
-                    spreadRadius: 3,
-                    offset: Offset(7, 9),
+                    blurRadius: 5,
+                    spreadRadius: 1,
+                    offset: Offset(3, 3),
                   ),
                 ],
               ),
@@ -88,6 +88,7 @@ class _HomepageState extends State<Homepage> {
                         ),
                       ),
                     ),
+                    Text("Sign in your store dashboard"),
                     SizedBox(height: 50),
                     SizedBox(
                       width: 300,
@@ -106,7 +107,7 @@ class _HomepageState extends State<Homepage> {
                       ),
                     ),
 
-                    SizedBox(height: 10),
+                    SizedBox(height: 20),
 
                     SizedBox(
                       width: 300,
