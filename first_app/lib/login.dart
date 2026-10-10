@@ -49,25 +49,11 @@ class _HomepageState extends State<Homepage> {
     }
   }
 
-  //Color barcaBlue = const Color(0xFF004D98);  blue
-  //Color barcaRed = const Color(0xFFA50044);   red
-  //Color barcaGold = const Color(0xFFEDBB00);  yellow
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF004D98),
-      appBar: AppBar(
-        title: Text(
-          "BARCELONA",
-          style: TextStyle(
-            color: const Color(0xFFEDBB00),
-            fontWeight: FontWeight(700),
-          ),
-        ),
-        centerTitle: true,
-
-        backgroundColor: const Color(0xFFA50044),
-      ),
+      backgroundColor: const Color(0xFFFAF9F6),
+      appBar: AppBar(backgroundColor: Colors.white),
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -77,7 +63,7 @@ class _HomepageState extends State<Homepage> {
               height: 450,
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
-                color: const Color(0xFFA50044),
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(20),
                 boxShadow: [
                   BoxShadow(
