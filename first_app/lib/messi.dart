@@ -12,7 +12,14 @@ class Messi extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFF004D98),
       appBar: AppBar(
-        title: Text("importent Screen"),
+        title: Text(
+          "MESSI STATUS PAGE",
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight(600),
+            color: const Color(0xFFEDBB00),
+          ),
+        ),
         backgroundColor: const Color(0xFFA50044),
       ),
       body: SingleChildScrollView(
@@ -40,14 +47,26 @@ class Messi extends StatelessWidget {
                     height: 300,
                     width: 500,
 
-                    child: Image.asset(
-                      "assets/images/leo.webp",
-                      fit: BoxFit.cover,
+                    child: ClipRRect(
+                      borderRadius: BorderRadiusGeometry.circular(20),
+                      child: Image.asset(
+                        "assets/images/leo.webp",
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),
 
                 SizedBox(height: 50),
+
+                Text(
+                  "MESSI STATUS",
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight(700),
+                    color: const Color(0xFFEDBB00),
+                  ),
+                ),
               ],
 
               // Your Container here
