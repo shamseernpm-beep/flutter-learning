@@ -16,35 +16,43 @@ class Messi extends StatelessWidget {
         backgroundColor: const Color(0xFFA50044),
       ),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            SizedBox(height: 50),
-            Container(
-              height: 300,
-              width: 300,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black,
-                    blurRadius: 15,
-                    spreadRadius: 3,
-                    offset: Offset(5, 5),
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Center(
+            child: Column(
+              children: [
+                Container(
+                  height: 300,
+                  width: 300,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black,
+                        blurRadius: 15,
+                        spreadRadius: 3,
+                        offset: Offset(5, 5),
+                      ),
+                    ],
                   ),
-                ],
-              ),
-              child: Container(
-                height: 300,
-                width: 500,
 
-                child: Image.asset("assets/images/leo.webp", fit: BoxFit.cover),
-              ),
+                  child: Container(
+                    height: 300,
+                    width: 500,
+
+                    child: Image.asset(
+                      "assets/images/leo.webp",
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+
+                SizedBox(height: 50),
+              ],
+
+              // Your Container here
             ),
-
-            SizedBox(height: 50),
-          ],
-
-          // Your Container here
+          ),
         ),
       ),
     );
