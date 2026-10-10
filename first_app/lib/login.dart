@@ -95,7 +95,8 @@ class _HomepageState extends State<Homepage> {
                       child: TextField(
                         controller: usernameController,
                         decoration: InputDecoration(
-                          hintText: "Enter your full name",
+                          hintText: "Enter your email",
+                          labelText: 'email',
                           filled: true,
                           fillColor: const Color(0xFFFAF9F6),
                           prefixIcon: Icon(Icons.person),
@@ -149,7 +150,7 @@ class _HomepageState extends State<Homepage> {
                           vertical: 15,
                         ),
                       ),
-                      child: Text("LOGIN"),
+                      child: Text("sign in"),
                     ),
 
                     SizedBox(height: 10),
