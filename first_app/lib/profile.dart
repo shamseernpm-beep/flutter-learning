@@ -17,7 +17,6 @@ class ProfileScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: SafeArea(
           child: Column(
-            mainAxisSize: MainAxisSize.min,
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -74,6 +73,12 @@ class ProfileScreen extends StatelessWidget {
                       ),
                     ],
                   ),
+                ),
+              ),
+              SizedBox(
+                width: 300,
+                child: TextField(
+                  decoration: InputDecoration(labelText: "search🔍"),
                 ),
               ),
               // ElevatedButton(
