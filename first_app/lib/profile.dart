@@ -15,10 +15,52 @@ class ProfileScreen extends StatelessWidget {
       backgroundColor: Color(0xFFFC8019),
 
       body: SingleChildScrollView(
-        child: Center(
+        child: SafeArea(
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  // Left side - Person Avatar
+                  IconButton(
+                    onPressed: () {
+                      print("Person clicked");
+                    },
+                    icon: const Icon(
+                      Icons.account_circle,
+                      color: Colors.red,
+                      size: 35,
+                    ),
+                  ),
+
+                  // Right side - Location Icon
+                  IconButton(
+                    onPressed: () {
+                      print("Location clicked");
+                    },
+                    icon: const Icon(
+                      Icons.location_on,
+                      color: Colors.red,
+                      size: 25,
+                    ),
+                  ),
+                ],
+              ),
+
+              SizedBox(height: 30),
+
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: SizedBox(
+                  width: double.infinity,
+                  child: Text(
+                    "Flat 50 % Of",
+                    textAlign: TextAlign.left,
+                    style: const TextStyle(fontSize: 30, color: Colors.white),
+                  ),
+                ),
+              ),
               // ElevatedButton(
               //   onPressed: () {
               //     Navigator.push(
