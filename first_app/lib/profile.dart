@@ -50,14 +50,29 @@ class ProfileScreen extends StatelessWidget {
 
               SizedBox(height: 30),
 
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: SizedBox(
-                  width: double.infinity,
-                  child: Text(
-                    "Flat 50 % Of",
-                    textAlign: TextAlign.left,
-                    style: const TextStyle(fontSize: 30, color: Colors.white),
+              SizedBox(
+                width: double.infinity,
+                child: Align(
+                  alignment: Alignment.topLeft,
+                  child: Column(
+                    children: [
+                      Text(
+                        "Flat 50 % Of",
+                        textAlign: TextAlign.left,
+                        style: const TextStyle(
+                          fontSize: 30,
+                          color: Colors.white,
+                        ),
+                      ),
+                      Text(
+                        " On First Order!",
+                        textAlign: TextAlign.left,
+                        style: const TextStyle(
+                          fontSize: 30,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
