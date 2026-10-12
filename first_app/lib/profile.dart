@@ -43,14 +43,7 @@ class ProfileScreen extends StatelessWidget {
                               style: TextStyle(color: Colors.white),
                             ),
                             leading: Icon(Icons.menu),
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => Messi(),
-                                ),
-                              );
-                            },
+                            onTap: () {},
                           ),
                         ],
                       ),
@@ -383,19 +376,19 @@ class ProfileScreen extends StatelessWidget {
               ),
 
               SizedBox(height: 30),
-              // ElevatedButton(
-              //   onPressed: () {
-              //     Navigator.push(
-              //       context,
-              //       MaterialPageRoute(builder: (context) => Messi()),
-              //     );
-              //   },
-              //   style: ElevatedButton.styleFrom(
-              //     backgroundColor: Colors.blue,
-              //     foregroundColor: Colors.white,
-              //   ),
-              //   child: Text("Go to main page"),
-              // ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Messi()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                  foregroundColor: Colors.white,
+                ),
+                child: Text("Go to main page"),
+              ),
             ],
           ),
         ),
