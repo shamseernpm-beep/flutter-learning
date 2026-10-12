@@ -1,100 +1,68 @@
-import 'package:first_app/messi.dart';
 import 'package:flutter/material.dart';
-
-//Color barcaBlue = const Color(0xFF004D98);  blue
-//Color barcaRed = const Color(0xFFA50044);   red
-//Color barcaGold = const Color(0xFFEDBB00);  yellow
 
 class ProfileScreen extends StatelessWidget {
   final String? username;
+
   const ProfileScreen({super.key, required this.username});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFC8019),
+      backgroundColor: const Color(0xFFFC8019),
 
-      body: SingleChildScrollView(
-        child: SafeArea(
-          child: Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  // Left side - Person Avatar
-                  IconButton(
-                    onPressed: () {
-                      print("Person clicked");
-                    },
-                    icon: const Icon(
-                      Icons.account_circle,
-                      color: Colors.red,
-                      size: 35,
+      appBar: AppBar(
+        elevation: 0,
+        leading: IconButton(
+          onPressed: () {
+            print("Person clicked");
+          },
+          icon: const Icon(Icons.account_circle, color: Colors.red, size: 35),
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {
+              print("Location clicked");
+            },
+            icon: const Icon(Icons.location_on, color: Colors.red, size: 25),
+          ),
+        ],
+      ),
+
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  "Flat 50 % Of",
+                  style: TextStyle(fontSize: 30, color: Colors.white),
+                ),
+
+                const Text(
+                  "On First Order!",
+                  style: TextStyle(fontSize: 30, color: Colors.white),
+                ),
+
+                const SizedBox(height: 20),
+
+                SizedBox(
+                  width: 300,
+                  child: TextField(
+                    decoration: InputDecoration(
+                      hintText: "Search 🔍",
+                      filled: true,
+                      fillColor: Colors.white,
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12),
+                        borderSide: BorderSide.none,
+                      ),
                     ),
                   ),
-
-                  // Right side - Location Icon
-                  IconButton(
-                    onPressed: () {
-                      print("Location clicked");
-                    },
-                    icon: const Icon(
-                      Icons.location_on,
-                      color: Colors.red,
-                      size: 25,
-                    ),
-                  ),
-                ],
-              ),
-
-              SizedBox(height: 30),
-
-              SizedBox(
-                width: double.infinity,
-                child: Align(
-                  alignment: Alignment.topLeft,
-                  child: Column(
-                    children: [
-                      Text(
-                        "Flat 50 % Of",
-                        textAlign: TextAlign.left,
-                        style: const TextStyle(
-                          fontSize: 30,
-                          color: Colors.white,
-                        ),
-                      ),
-                      Text(
-                        " On First Order!",
-                        textAlign: TextAlign.left,
-                        style: const TextStyle(
-                          fontSize: 30,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
-                  ),
                 ),
-              ),
-              SizedBox(
-                width: 300,
-                child: TextField(
-                  decoration: InputDecoration(labelText: "search🔍"),
-                ),
-              ),
-              // ElevatedButton(
-              //   onPressed: () {
-              //     Navigator.push(
-              //       context,
-              //       MaterialPageRoute(builder: (context) => Messi()),
-              //     );
-              //   },
-              //   style: ElevatedButton.styleFrom(
-              //     backgroundColor: Colors.blue,
-              //     foregroundColor: Colors.white,
-              //   ),
-              //   child: Text("Go to main page"),
-              // ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
