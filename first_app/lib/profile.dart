@@ -13,19 +13,7 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFF004D98),
-      appBar: AppBar(
-        title: Center(
-          child: Text(
-            "PLAYERS  PROFILE",
-            style: TextStyle(
-              color: const Color(0xFFEDBB00),
-              fontSize: 30,
-              fontWeight: FontWeight(700),
-            ),
-          ),
-        ),
-        backgroundColor: const Color(0xFFA50044),
-      ),
+
       body: SingleChildScrollView(
         child: Center(
           child: Column(
