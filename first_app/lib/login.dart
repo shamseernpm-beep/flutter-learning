@@ -9,8 +9,10 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
-  TextEditingController usernameController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
+  final TextEditingController usernameController = TextEditingController();
+
+  final TextEditingController passwordController = TextEditingController();
+
   @override
   void dispose() {
     usernameController.dispose();
@@ -33,14 +35,14 @@ class _HomepageState extends State<Homepage> {
         context: context,
         builder: (context) {
           return AlertDialog(
-            title: Text("login failed"),
-            content: Text("invalid user name or password"),
+            title: const Text("Login Failed"),
+            content: const Text("Invalid username or password"),
             actions: [
               TextButton(
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                child: Text("ok"),
+                child: const Text("OK"),
               ),
             ],
           );
@@ -53,112 +55,135 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFFAF9F6),
-      appBar: AppBar(backgroundColor: Colors.white),
+
+      appBar: AppBar(
+        title: const Text(
+          "RISWAN APP",
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
+      ),
+
       body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Container(
-              width: 400,
-              height: 450,
-              padding: const EdgeInsets.all(20),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(20),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black,
-                    blurRadius: 5,
-                    spreadRadius: 1,
-                    offset: Offset(3, 3),
-                  ),
-                ],
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(20),
-                child: Column(
-                  children: [
-                    Align(
-                      alignment: Alignment.topCenter,
-                      child: Text(
-                        "WELCOME",
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight(600),
-                        ),
-                      ),
-                    ),
-                    Text("Sign in your store dashboard"),
-                    SizedBox(height: 50),
-                    SizedBox(
-                      width: 300,
-                      child: TextField(
-                        controller: usernameController,
-                        decoration: InputDecoration(
-                          hintText: "Enter your email",
-                          labelText: 'email',
-                          filled: true,
-                          fillColor: const Color(0xFFFAF9F6),
-                          prefixIcon: Icon(Icons.person),
-                          // labelText: "name",
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                        ),
-                      ),
-                    ),
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(25),
 
-                    SizedBox(height: 20),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              // Login Icon
+              const Icon(Icons.account_circle, size: 100, color: Colors.blue),
 
-                    SizedBox(
-                      width: 300,
-                      child: TextField(
-                        controller: passwordController,
-                        obscureText: true,
+              const SizedBox(height: 20),
 
-                        decoration: InputDecoration(
-                          hintText: "Enter your password",
-                          fillColor: const Color(0xFFFAF9F6),
-                          filled: true,
-                          prefixIcon: Icon(Icons.password),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                        ),
-                      ),
-                    ),
-
-                    Align(
-                      alignment: Alignment.topRight,
-                      child: TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          "FORGET PASSWORD",
-                          style: TextStyle(color: Colors.red),
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 10),
-
-                    ElevatedButton(
-                      onPressed: login,
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFFFAF9F6),
-                        foregroundColor: Colors.black,
-                        padding: EdgeInsets.symmetric(
-                          horizontal: 50,
-                          vertical: 15,
-                        ),
-                      ),
-                      child: Text("sign in"),
-                    ),
-
-                    SizedBox(height: 10),
-                  ],
+              // Heading
+              const Text(
+                "WELCOME BACK!",
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue,
                 ),
               ),
-            ),
-          ],
+
+              const SizedBox(height: 10),
+
+              const Text(
+                "Please login to continue",
+                style: TextStyle(fontSize: 16, color: Colors.black54),
+              ),
+
+              const SizedBox(height: 30),
+
+              // Username Field
+              SizedBox(
+                width: 300,
+                child: TextField(
+                  controller: usernameController,
+                  decoration: InputDecoration(
+                    hintText: "Enter your full name",
+                    prefixIcon: const Icon(Icons.person),
+                    filled: true,
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 20),
+
+              // Password Field
+              SizedBox(
+                width: 300,
+                child: TextField(
+                  controller: passwordController,
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    hintText: "Enter your password",
+                    prefixIcon: const Icon(Icons.password),
+                    filled: true,
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                  ),
+                ),
+              ),
+
+              // Forgot Password
+              Align(
+                alignment: Alignment.centerRight,
+                child: TextButton(
+                  onPressed: () {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text(
+                          "Please contact the administrator to reset your password.",
+                        ),
+                      ),
+                    );
+                  },
+                  child: const Text(
+                    "FORGET PASSWORD",
+                    style: TextStyle(color: Colors.red),
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 10),
+
+              // Login Button
+              SizedBox(
+                width: 300,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: login,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.red,
+                    foregroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                  ),
+                  child: const Text(
+                    "LOGIN",
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 20),
+
+              const Text(
+                "Welcome to my application",
+                style: TextStyle(color: Colors.black54, fontSize: 14),
+              ),
+            ],
+          ),
         ),
       ),
     );
